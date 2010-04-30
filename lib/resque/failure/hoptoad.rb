@@ -1,4 +1,4 @@
-module Rescue
+module Resque
   module Failure
     # A Failure backend that sends exceptions raised by jobs to Hoptoad.
     #
