@@ -16,7 +16,9 @@ module Resque
         { :worker => worker,
           :queue => queue,
           :job => payload['class'],
-          :args => payload['args'].to_json }
+          :args => payload['args'].to_json,
+          :controller => queue,
+          :action => payload['class']}
       end
     end
   end
